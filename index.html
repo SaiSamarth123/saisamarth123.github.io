@@ -1,7 +1,48 @@
+
 <!DOCTYPE html>
 <html>
 <title>CS 428</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
@@ -10,13 +51,147 @@
   <h1>CS 428 - Virtual, Augmented and Mixed Reality</h1>
 </div>
 
-<div class="w3-container">
-  <p>Will be updated with homeworks and projects</p>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Project 1')">Project 1</button>
+  <button class="tablinks" onclick="openCity(event, 'Project 2')">Project 2</button>
+  <button class="tablinks" onclick="openCity(event, 'Project 3')">Project 3</button>
 </div>
 
-<div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
+<!-- Tab content -->
+<div id="Project 1" class="tabcontent">
+  <h3>Project 1</h3>
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/yPxbH4k5lBE">
+  </iframe>
+  <br>
+  <b>Github link: </b>
+  <button onclick=" window.open('https://github.com/SaiSamarth123/Patipati.SaiSamarth.CS428P1','_blank')">Link</button>
 
+  <p>This project was an individual project focused on Augmented Reality. The goal of this project was to make two AR knickknacks. These knickknacks grab the weather and time at the location of the attraction they represent. I picked Charminar(Hyderabad, India) and Starbase(Texas) as the two knickknacks for this project. They show the right temperature and time from the respective location. You can interact with the attractions and see what they’d look like from close. To see the two attractions, we need first to create two physical cubes so the application can map the AR knickknack onto them. We need the Merge cube for the Starbase knickknack, and for the Charminar knickknack, we need the Class cube.
+  </p>
+
+  <!-- <video width="320" height="240" autoplay muted>
+  <!-- <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg"> -->
+  <!-- Your browser does not support the video tag.
+  </video> -->
+
+  <b>
+    Downloading instructions:
+  </b>
+  <p>
+    After building the physical cubes, download the project from the GitHub link above. Clone the project into a directory and open it in Unity. This project uses Unity 2021.3.6f1 and Vuforia version 10.9, so check the setting on Unity before running it. If you don't have Unity or Vuforia, go to https://unity.com/ and click the big blue Get Started button at the top, click on the Individual tab, and then click the blue Get Started button under Personal. Then download Unity Hub for your platform (Windows or Mac).
+    For Vuforia, register for a free account at  https://developer.vuforia.com/. Download add-vuforia-package-10-9-3.unitypackage after clicking 'Add Vuforia Engine to a Unity Project or upgrade to the latest version.' Download the required version of Vuforia from https://developer.vuforia.com/downloads/sdk.
+  </p>
+  <b>
+    Source of Assets: 
+  </b>
+  <p>
+    I used 6 models and 2 sounds from other creators.<br>
+    Models:<br>
+    Knickknack 1 Starbase Facility<br>
+    <ul>
+      <li> Falcon 9 SpaceX model by Stanley Creative was used because they're tested at this location: "Falcon 9 - SpaceX" (https://skfb.ly/6RIC9) by Stanley Creative is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+      </li>
+      <li> Tesla 2018 Model 3 by Ameer Studio was used as they're always used to move around the facility: "Tesla 2018 Model 3" (https://skfb.ly/oo9Y6) by Ameer Studio is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li>Astronaut by VISBYTE was used as they're found around the facility: "Astronaut" (https://skfb.ly/oxrXw) by VISBYTE is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li> Rocket launch sound from sounds-mp3.com was used to show what it feels like to be at the location: https://sounds-mp3.com/mp3/0008474.mp3</li>
+    </ul>
+    Knickknack 2 Charminar
+    <ul>
+      <li>Charminar model by Shreyas was used as it's the center piece of Hyderabad: "Charminar" (https://skfb.ly/optEw) by Shreyas is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li>Bicycle model by pot4tochip was used as it's the most common mode of transport in Hyderabad: "Bicycle ^^" (https://skfb.ly/6UTZW) by pot4tochip is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li>Carbon Motors E7 Taxi (Cities skyline) model by TSB3DMODELS was used as Charminar is a tourist attraction: "CARBON MOTORS E7 TAXI (Cities Skylines)" (https://skfb.ly/6GLUN) by TSB3DMODELS is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li>Traffic sound from shockwavesound.com was used as the location is always crowded:https://www.shockwave-sound.com/sound-effects/traffic-sounds/road_traffic_with_horn.wav.</li>
+    </ul>
+
+    <b>Images & Videos</b>
+    <br>
+    <b>Models by other creators:</b>
+    <br>
+    1. SpaceX Falcon: 
+    <img src="https://s7.freeconvert.com/task/6328e28aa3e7860012f5d6de/Falcon.HEIC.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    2. Tesla 2018 Model 3: 
+    <img src="https://s105.freeconvert.com/task/6328e2874a09d6001200b8ca/Tesla.HEIC.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    3. Astronaut: 
+    <img src="https://s11.freeconvert.com/task/6328e2884a09d6001200b8d0/Astronaut.HEIC.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    4. Charminar: 
+    <img src="https://s102.freeconvert.com/task/6328e2c65ff6e80011491179/Charminar.HEIC.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    5. Taxi: 
+    <img src="https://s105.freeconvert.com/task/6328e289a3e7860012f5d6d4/Taxi.HEIC.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    6. Bicycle: 
+    <img src="https://s4.freeconvert.com/task/6328e28be8b25f0012f5b0e2/Bicycle.HEIC.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    <b>Models created by me:</b>
+    <br>
+    <br>
+    1. SpaceX balloon: 
+    <img src="/Users/saisamarth/Downloads/Balloon.png" alt="SpaceX Balloon" style="width:150px;height:150px;">
+     <br>
+     <br>
+    2. Chair: 
+    <img src="/Users/saisamarth/Downloads/Chair.png" alt="Chair" style="width:150px;height:150px;">
+     <br>
+     <br>
+    3. Balloons: 
+    <img src="/Users/saisamarth/Downloads/Balloons.png" alt="Balloons" style="width:150px;height:150px;">
+     <br>
+     <br>
+    4. Basket: 
+    <img src="/Users/saisamarth/Downloads/Basket.png" alt="Basket" style="width:150px;height:150px;">
+
+  </p>
+  <br>
+  <b>Discussion about AR Enhanced Physical Objects</b>
+  <br>
+  <iframe src="/Users/saisamarth/Downloads/CS 428 Project 1.pdf" width="100%" height="500px">
+  </iframe>
+
+
+   
+
+</div>
+
+<div id="Project 2" class="tabcontent">
+  <h3>Project 2</h3>
+  <p>Project 1</p>
+</div>
+
+<div id="Project 3" class="tabcontent">
+  <h3>Project 3</h3>
+  <p>Project 3</p>
+</div>
+<!--
+  <div class="w3-display-bottomleft">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div> -->
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 </body>
 </html> 
