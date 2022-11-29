@@ -46,14 +46,14 @@ body {font-family: Arial; background-color: #c5c6c7;}
   color: #66fcf1;
   background-color: #1f2833;
 }
-ul {
+/* ul {
   white-space: nowrap;
-}
+} */
 
-ul, li {
+/* ul, li {
   list-style: none;
   display: inline;
-}
+} */
 
 .item{
   width:300px;
@@ -374,8 +374,206 @@ h3 {
 
 
 <div id="Project 3" class="tabcontent">
-  <h2>Project 3</h2>
-  <p>Project 3</p>
+ <h2>Project 3</h2>
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/516Fj09A280">
+  </iframe>
+  <br>
+  <b>Github link: </b>
+  <button onclick=" window.open('https://github.com/SaiSamarth123/Patipati.SaiSamarth.CS428.P3','_blank')">Link</button>
+  <br>
+  <b>Description</b>
+  <br>
+  <p>This project is an immersive Virtual Reality experience at building scale. The goal of this project is to enable users to walk around and interact with the things in the atrium of unbuilt CDRLC building. I decided to go with the world theme for my atrium. Each floor of the building is assigned a different continent. The ground floor of the building has North American items and theme. The first floor has the European theme. The second floor has the Asian theme. The third floor of the building has the South American theme. The last floor has African artifacts.
+  </p>
+
+  <!-- <video width="320" height="240" autoplay muted>
+  <!-- <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg"> -->
+  <!-- Your browser does not support the video tag.
+  </video> -->
+
+  <b>
+    Downloading instructions:
+  </b>
+  <p>
+    To gain access to the atrium of CDRLC building, first download the project from the GitHub link above. Clone the project into a directory and open it in Unity. This project uses Unity 2021.3.6f1 and VRTK version 4, so check the setting on Unity before running it. VRTK handles the visuals in the headset and the interaction. If you don't have Unity or VRTK, go to https://unity.com/ and click the big blue Get Started button at the top, click on the Individual tab, and then click the blue Get Started button under Personal. Then download Unity Hub for your platform (Windows or Mac).We need to add some backup files that Unity can recreate after downloading since we add a gitignore page to avoid those files for github. Unity should do this automatically if the versions are correct. We can use both our device simulator and the headset to run this project. The CoffeeScene has the atrium. When you play the scene you should be able to move around with the WASD keys, use the mouse to look around. You can use the 2 key and 3 key to take control of the simulated left and right hand controls respectively. If you place one of the two simulated controllers into one of the interactable items you can use the left mouse button to pick them up. The 1 key takes you back to controlling the player. If you plug in one of the Quest headsets in the classroom, switch the platform to Android, turn off the CameraRigs.SpatialSimulator and turn on the CameraRigs.UnityXRPluginFramework, you can build and run the same scene on the headset and move around with your body and interact with the real controllers using the trigger on either controller to grab interactable items. Putting your thumb on the right joystick brings up a teleporter and then pressing the joystick teleports you to that location. Pressing the Oculus button on the right controller will allow you to exit the application.
+  </p>
+  <b>
+    Source of Assets: 
+  </b>
+  <p>
+    I downloaded 10 models from Sketchfab, made 9 3D models on Blender and Unity, made 12 flat models on Unity, and 5 sounds from other creators.<br>
+    Models:<br>
+    Four of these 3D models are animated or move some of their parts.
+    <br>
+    <ul>
+      <li> Sushi and Ramen Booth by Y_r9: "Sushi & ramen Booth" (https://skfb.ly/6YGXv) by Y_r9 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). The rotary sushi bar was animated in Blender and attached in Unity.</li>
+      <li> Animated Dog, Shibu Inu: "Animated Dog, Shiba Inu" (https://skfb.ly/6SrJO) by quander is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). The animation was made in Blender and attached in Unity.</li>
+      <li> Robot by l0woly: "Robot" (https://skfb.ly/o8NHz) by l0wpoly is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). The animation was edited in Blender and attached in Unity.</li>
+      <li> Student made on MakeHuman is talking on the phone. The animation is from mixamo.com and was attached in Unity.</li>
+    </ul>
+    <br>
+    Five of the models have rigidbodies and colliders attached to them. Two of these models have the ability to clone themselves.<br>
+    <ul>
+      <li> Swiss chocolate made in Blender: Material from https://www.gourmetfoodstore.com/images/Product/large/villars-collection-pure-swiss-milk-chocolate-32-1S-13548.jpg</li>
+      <li> Chocolate made in Blender: Material from https://thumbs.dreamstime.com/z/chocolate-sweets-shop-logo-label-chocolate-sweets-shop-logo-label-candy-bar-emblem-design-template-lollipop-icon-sticker-retro-132930632.jpg</li>
+      <li> Laddoo made in Blender. This model produces new clones when the user touches a button. Material from https://5.imimg.com/data5/ANDROID/Default/2021/3/HR/WH/MT/51651198/img-20210105-wa0013-jpg-500x500.jpg</li>
+      <li> Maggi made in Blender. This model clones itself when user presses a button. Materials from https://i.ebayimg.com/images/g/8WAAAOSwkLJa~mAm/s-l500.jpg and https://m.media-amazon.com/images/I/51B++frswuL._AC_SY780_.jpg</li>
+      <li> The animated robot is interactable as well.</li>
+    </ul>
+    <br>
+    Ten of the 3D models do not have physics attached to them and are not animated. All the flat models do not have any physics attached to them.<br>
+    <ul>
+      <li> Pyramid made in Blender. Material from https://previews.123rf.com/images/baloncici/baloncici1111/baloncici111100102/11484674-khafre-pyramid-wall-texture-at-sunny-day.jpg</li>
+      <li> Laddoo dispenser made in Blender. Material from https://static.vecteezy.com/system/resources/thumbnails/002/117/641/small/metal-texture-background-with-copy-space-illustration-vector.jpg</li>
+      <li> Vending Machine made in Blender. Material from /li>
+      <li> Table with a lever made in Blender. The animation was made in Blender as well.</li>
+      <li> Lincoln Memorial Sketch model by jerryfisher: "Lincoln Memorial Sketch Model" (https://skfb.ly/6SQxt) by jerryfisher is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li> Merlion model by sanjus: "Sculpture of Singapore Merlion" (https://skfb.ly/6tNNG) by sanjus is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).</li>
+      <li> Fishing Hut by Dabbre: "Aztec Fishing Hut - Inspired by Albion Online" (https://skfb.ly/6T7AR) by Dabbre is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li> Ganesha Statue by Francesco Coldesina: "Jhai Ganesha Deva" (https://skfb.ly/6UnGI) by Francesco Coldesina is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).</li>
+      <li> Japanese Temple by galaxxxy: "Japanese Temple" (https://skfb.ly/6RyU9) by galaxxxy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li> Stonehenge model by GSXNet: "Stonehenge England - VR" (https://skfb.ly/6QXqU) by GSXNet is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+      <li> Persian Rug made in Unity. Material from </li>
+      <li> African Wall Art made in Unity. Material from</li>
+      <li> European Wall decor made in Unity. Material from </li>
+      <li> Aztec Tapestry made in Unity. Material from </li>
+      <li> North American decor made in Unity. Material from </li>
+      <li> Black Panther Wall Art made in Unity. Material from </li>
+      <li> 6 Posters for every floor made in Unity.</li>
+    </ul>
+    <br>
+    <b> Sound</b> <br>
+    <ul>
+      <li> Royalty Free Trap Beat(Prod. by MJartist): Music by <a href="https://pixabay.com/users/mjrtist-23639224/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=9029">Matteo Giovanni</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=9029">Pixabay</a></li>
+      <li> Refined Style by Daddy s Music: Music by <a href="https://pixabay.com/users/daddy_s_music-22836301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=119195">Daddy_s_Music</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=119195">Pixabay</a></li>
+      <li> DesiTalk Exclusice - Life is Strange - Cold Breeze - Acoustic version by MADiRFAN: Music by <a href="https://pixabay.com/users/madirfan-50411/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=15168">Irfan Zafar</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=15168">Pixabay</a></li>
+      <li> Night Jazz Beats by flybirdaudio: Music by <a href="https://pixabay.com/users/flybirdaudio-24094011/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=10039">flybirdaudio</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=10039">Pixabay</a></li>
+      <li> Chilled Ambient Minimal by ComaStudio: Music by <a href="https://pixabay.com/users/comastudio-26079283/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=119323">ComaStudio</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=119323">Pixabay</a></li>
+    </ul>
+    <b>Images & Videos</b>
+    <br>
+    <b>Models from Sketchfab:</b>
+    <br>
+    1. Merlion: 
+    <img src="pdfs/mer.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    2. Japanese Temple: 
+    <img src="pdfs/temple.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    3. Stonehenge: 
+    <img src="pdfs/stonehenge.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    4. Drone: 
+    <img src="pdfs/IMG-1976.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    5. Dog: 
+    <img src="pdfs/dog.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    6. Robot: 
+    <img src="pdfs/robot.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    7. Sushi and Ramen Booth: 
+    <img src="pdfs/sush.jpg" alt="Falcon" style="width:150px;height:150px;">
+    <br>
+    <br>
+    8. Ganesha: 
+    <img src="pdfs/ganesha.jpg" alt="Bose" style="width:150px;height:150px;">
+    <br>
+    <br>
+    9. Fishing Hut: 
+    <img src="pdfs/fishing.jpg" alt="Phillips" style="width:150px;height:150px;">
+    <br>
+    <br>
+    10. Lincoln memorial statue: 
+    <img src="pdfs/lincoln.jpg" alt="Drumset" style="width:150px;height:150px;">
+    <br>
+    <br>
+
+    <b>Models created by me:</b>
+    <br>
+    <br>
+    1. MakeHuman student: 
+    <img src="pdfs/student.jpg" alt="Bobbing" style="width:150px;height:150px;">
+     <br>
+     <br>
+    2. Pyramid: 
+    <img src="pdfs/IMG-1975.jpg" alt="Dancing" style="width:150px;height:150px;">
+     <br>
+     <br>
+    3. Swiss Chocolate: 
+    <img src="pdfs/swiss.jpg" alt="Flute" style="width:150px;height:150px;">
+     <br>
+     <br>
+    4. Chocolate Sweets: 
+    <img src="pdfs/sweet.jpg" alt="Basket" style="width:150px;height:150px;">
+     <br>
+    5. Laddoo: 
+    <img src="pdfs/lad.jpg" alt="Drumstick" style="width:150px;height:150px;">
+     <br>
+      <br>
+    6. Laddoo Dispenser: 
+    <img src="pdfs/IMG-1978.jpg" alt="GuitarPick" style="width:150px;height:150px;">
+     <br>
+      <br>
+    7. Vending Machine: 
+    <img src="pdfs/vending.jpg" alt="Balloons" style="width:150px;height:150px;">
+     <br>
+      <br>
+    8. Maggi: 
+    <img src="pdfs/mag.jpg" alt="Balloons" style="width:150px;height:150px;">
+      <br>
+      <br>
+    9. Table with lever: 
+    <img src="pdfs/table.jpg" alt="Balloons" style="width:150px;height:150px;">
+     <br>
+      <br>
+    10. African Wall Art: 
+    <img src="pdfs/af.jpg" alt="Balloons" style="width:150px;height:150px;">
+      <br>
+      <br>
+    11. African Decor: 
+    <img src="pdfs/black.jpg" alt="Balloons" style="width:150px;height:150px;">
+      <br>
+      <br>
+    12. North American Wall Decor: 
+    <img src="pdfs/na.jpg" alt="Balloons" style="width:150px;height:150px;">
+      <br>
+      <br>
+    13. Aztec Tapestry: 
+    <img src="pdfs/aztec.jpg" alt="Balloons" style="width:150px;height:150px;">
+      <br>
+      <br>
+    14. European art: 
+    <img src="pdfs/euro.jpg" alt="Balloons" style="width:150px;height:150px;">
+      <br>
+      <br>
+    15. Rug: 
+    <img src="pdfs/rug.jpg" alt="Balloons" style="width:150px;height:150px;">
+      <br>
+      <br>
+    16. Posters for each floor: 
+    <img src="pdfs/Book.jpg" alt="Balloons" style="width:150px;height:150px;">
+      <br>
+      <br>  
+  </p>
+  <br>
+
+  <b>VR: Simulated vs Quest</b>
+  <br>
+  <p>
+   Virtual reality is making strides in several fields and real estate hasn’t been lefot out this loop. Real estate can benefit a lot by incorporating virtual reality into selling and advertising houses. It would enable real estate agents and homeowners to have 24/7 open house tours. The whole process would be made more simpler with the introduction of virtual reality tours of buildings and homes before they’re built or bought. It would deliver life-like tours that make users feel like they’re present at the location. Although people must include photos in their listing, photos can sometimes be misleading. It also enables them to introduce the property to other interested parties around the world. It also makes it stand out as people would want to try out the new technology. There are several companies that are trying to help real estate agents. Some companies have also received a lot of awards. Transported is a company that is trying to create VR tours for homes. They have been featured in the Los Angeles Times, Fortune, Curbed and other well known establishments. The company also has two options to for creating the tours. One for tour creators and one for real estate agents. The development of ARKit and ArCore has made it possible for people without VR headsets to experience these tours. Agents can send mobile compatible links to people who want to tour the buildings. It also allows for stunning details and graphics with impressive colors. They benefit both the buyer and the seller. There have also been studies that showed that people are more likely to buy a house if they offer virtual tours. 
+In my life I could use this to show my family building that they cannot visit. It can use it to show my current home to my family members in India who won’t be able to make it here. It’s simple enough to book a service. The company then comes in to scan the house which usually takes about an hour. We could then share the tours to anyone. These tours can be viewed on the Google Cardboard, Oculus Rift, Samsung Gear as well as mobile phones and web. We could also use this technology to visualize buildings before they are finished constructing. It would help us get an idea of what the area would look like. We’d be able to make changes and see the environment change to create the best building. They are very convenient and hassle free. These tours will also allow the users to standout. If we create a house tour we have a recorded memory of the house forever. People would be able to walk around a virtual representation of their house if it get sold or destroyed. The process of making the VR house tour is simple as well. There are several award winning applications that make the whole process simpler. Staging the rooms and picking the shots is the only part of the process that might take the longest time. This part of the process includes taking test shots, rearranging the room and finalizing the shot. Although it sounds like a tiring process, it really isn’t. We’d be able to scan our houses or buildings in a couple of hours depending on the size. It’s impossible to not use this kind of technology in the real estate industry because of all of its benefits. It’s also very beneficial to everyone in general who’s trying to build a house or building. Hopefully, in the near future VR tours will become the norm for any kind of tours. 
+
+  </p>
+  <a href="pdfs/CS 428 Project 2.pdf" width="100%" height="500px">Link</a>
 </div>
 
 
